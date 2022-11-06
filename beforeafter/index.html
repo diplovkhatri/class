@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 50px;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        margin: 0 auto;
+        width: 400px;
+        box-shadow: 5px 5px 5px 5px gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .container::after {
+        content: "20% off";
+        display: block;
+        width: 250px;
+        height: 100px;
+        background-color: blue;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(45deg);
+        position: absolute;
+        top: -8px;
+        right: -75px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- before after  -->
+    <div class="container">
+      <img src="../introduction/images/shoes.jpeg" alt="" />
+      <h2>product name</h2>
+      <h3>Rs. 4000</h3>
+    </div>
+  </body>
+</html>

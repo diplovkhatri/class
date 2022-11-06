@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+        condition statement
+        1.if statement
+        2.if else statement
+            only for twi condition
+        3.if else-if else statement
+            more then two condition
+        4.nested if-else statement
+            condition under another condition
+            if(){
+                if(){
+                }
+            }
+            else{
+            }
+        */
+      //   let a = 5;
+      //   if (a < 0) {
+      //     document.write("a is negative");
+      //   } else {
+      //     document.write("a is positive");
+      //   }*/
+      let a = Number(prompt("enter a:"));
+      let b = Number(prompt("enter b:"));
+      let c = Number(prompt("enter c:"));
+      if (a > b) {
+        if (a > c) {
+          document.write("a is greatest: " + a);
+        } else {
+          document.write("c is greatest: " + c);
+        }
+      } else {
+        if (b > c) {
+          document.write("b is greatest: " + b);
+        } else {
+          document.write("c is greatest: " + c);
+        }
+      }
+    </script>
+  </body>
+</html>

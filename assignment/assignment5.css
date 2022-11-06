@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+}
+.navbar {
+  list-style: none;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: purple;
+  color: white;
+}
+.introduction {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.leftbar {
+  width: 77%;
+  height: 500px;
+  background-color: white;
+  font-size: 28px;
+  margin-top: 100px;
+  margin-left: 170px;
+}
+.info {
+  width: 500px;
+}
+.animation > p {
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 30px;
+  width: 500px;
+  animation: scal 5s 10s infinite;
+}
+@keyframes scal {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-65px);
+  }
+}
+.animation {
+  overflow: hidden;
+  height: 150px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 40px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+button {
+  width: 150px;
+  font-size: 28px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+button:first-child {
+  color: black;
+  border: 5px solid blue;
+  border-style: double;
+  border-radius: 10px;
+}
+button:last-child {
+  color: black;
+  border: 5px solid blue;
+  border-style: double;
+  border-radius: 10px;
+}
+button:first-child:hover {
+  background: linear-gradient(
+    150deg,
+    gold,
+    yellow,
+    red,
+    blue,
+    green,
+    white,
+    gray
+  );
+  color: white;
+}
+
+.rightbar {
+  width: 100%;
+  position: relative;
+  background: palevioletred;
+  right: -7px;
+}
+.rightbar:after {
+  content: "";
+  position: absolute;
+  left: -32px;
+  bottom: -138px;
+  border-left: 213px solid white;
+  border-top: 213px solid transparent;
+  border-bottom: 213px solid transparent;
+
+  transform: rotate(-225deg);
+}
+
+.rightbar:before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  bottom: 312px;
+  border-left: 213px solid white;
+  border-top: 213px solid transparent;
+  border-bottom: 213px solid transparent;
+
+  transform: rotate(225deg);
+}
+.icons {
+  width: 300px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+iconify-icon {
+  font-size: 52px;
+  color: blue;
+}
+iconify-icon:hover {
+  font-size: 52px;
+  color: red;
+}
+.rightbar > img {
+  position: absolute;
+  transform: scale(0.9);
+  right: 20%;
+  bottom: 20%;
+}
+.main_body {
+  background-color: gainsboro;
+  width: 100%;
+  height: max-content;
+}
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card_info {
+  height: 550px;
+  background-color: whitesmoke;
+  color: black;
+  margin: 30px;
+  box-shadow: 5px 5px 5px 10px gray;
+}
+h2 {
+  text-align: center;
+  font-size: 42px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.card_info > img {
+  width: 350px;
+  height: 350px;
+}
+h3 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 10px;
+}
+.p_info > p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.p_info > iconify-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.p_info > iconify-icon:hover {
+  color: red;
+}
+
+.contact {
+  background-color: whitesmoke;
+  padding-bottom: 2px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  justify-content: center;
+  margin-left: -400px;
+  border: none;
+}
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.form > iconify-icon {
+  font-size: 300px;
+  color: blanchedalmond;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -450px;
+  background-color: whitesmoke;
+}
+input {
+  height: 40px;
+  border: 2px solid red;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 28px;
+  text-align: center;
+}
+textarea {
+  border: 2px solid red;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 28px;
+  text-align: center;
+}
+form > button {
+  width: 100%;
+  border: 2px solid blue;
+  border-radius: 10px;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+.c_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c_icon > iconify-icon:nth-child(2) {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.c-icon {
+  padding-top: 15px;
+  display: flex;
+  background-color: purple;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.c-icon > p {
+  font-size: 20px;
+  color: white;
+}

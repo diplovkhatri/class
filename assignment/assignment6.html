@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+      }
+      img {
+        z-index: 100;
+        position: relative;
+        top: 20px;
+        transform: scale(0.4);
+      }
+      .container {
+        margin: 0 auto;
+        width: 600px;
+        height: 600px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        position: relative;
+      }
+      .container::before {
+        height: 450px;
+        width: 450px;
+        border-radius: 50%;
+        content: "";
+        background-color: gray;
+        opacity: 0.1;
+        position: absolute;
+      }
+      .container::after {
+        content: "";
+        z-index: 1;
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        border-radius: 50%;
+        position: absolute;
+        opacity: 0.2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../introduction/images/mbl.png" alt="" />
+    </div>
+  </body>
+</html>

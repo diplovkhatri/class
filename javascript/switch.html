@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch</title>
+  </head>
+  <body>
+    <script>
+      /*
+        day-1 to 7
+        1-sunday
+        2-monday
+        other-invalid
+
+        switch(condn){
+        1:
+        statement if condn is 1
+        }
+        */
+      //   day = Number(prompt("enter a number"));
+      //   switch (day) {
+      //     case 1:
+      //       document.write("sunday");
+      //       break;
+      //     case 2:
+      //       document.write("monday");
+      //       break;
+      //     case 3:
+      //       document.write("tuesday");
+      //       break;
+      //     case 4:
+      //       document.write("wednesday");
+      //       break;
+      //     case 5:
+      //       document.write("thursday");
+      //       break;
+      //     case 6:
+      //       document.write("friday");
+      //       break;
+      //     case 7:
+      //       document.write("satarday");
+      //       break;
+
+      //     default:
+      //       document.write("invalid day");
+      //       break;
+      //   }
+      a = Number(prompt("enter number a:"));
+      b = Number(prompt("enter number a:"));
+      number = Number(
+        prompt("1.Add \n 2.Subtract \n 3.Multiply \n 4.Division")
+      );
+      switch (number) {
+        case 1:
+          add = a + b;
+          document.write(add);
+          break;
+        case 2:
+          sub = a - b;
+          document.write(sub);
+          break;
+        case 3:
+          mul = a * b;
+          document.write(mul);
+          break;
+        case 4:
+          div = a / b;
+          document.write(div);
+          break;
+
+        default:
+          document.write("invalid inputs");
+          break;
+      }
+    </script>
+  </body>
+</html>

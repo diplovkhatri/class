@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // nested while loop
+      document.write("nested while loop");
+      let a = 1;
+      while (a <= 10) {
+        let b = 1;
+        while (b <= 10) {
+          document.write(b + " ");
+          b++;
+        }
+        document.write("<br>");
+        a++;
+      }
+      document.write("<br>");
+      document.write("nested for loop<br>");
+      //   nested for loop
+      for (let i = 0; i <= 10; i++) {
+        for (let j = 0; j <= i; j++) {
+          document.write("* ");
+        }
+        document.write("<br>");
+      }
+      document.write("<br>");
+      for (let i = 0; i <= 10; i++) {
+        for (let j = i; j <= 10; j++) {
+          document.write("* ");
+        }
+        document.write("<br>");
+      }
+
+      for (let i = 0; i < 5; i++) {
+        for (let j = i; j < 4; j++) {
+          document.write("&nbsp;&nbsp; ");
+        }
+        for (let j = 0; j <= i; j++) {
+          document.write("* ");
+        }
+        document.write("<br>");
+      }
+
+      document.write("<br>");
+      for (let i = 1; i <= 5; i++) {
+        for (let j = i; j < 5; j++) {
+          document.write("&nbsp;&nbsp; ");
+        }
+        for (let j = i; j >= 1; j--) {
+          document.write(j + " ");
+        }
+        for (let j = 2; j <= i; j++) {
+          document.write(j + " ");
+        }
+        document.write("<br>");
+      }
+      document.write("<br>");
+      for (let i = 1; i <= 5; i++) {
+        for (let j = i; j < 5; j++) {
+          document.write("&nbsp;&nbsp; ");
+        }
+        for (let j = i; j >= 1; j--) {
+          document.write("* ");
+        }
+        for (let j = 2; j <= i; j++) {
+          document.write("* ");
+        }
+        document.write("<br>");
+      }
+      document.write("<br>");
+      for (let i = 1; i <= 5; i++) {
+        for (let j = i; j < 5; j++) {
+          document.write("&nbsp;&nbsp; ");
+        }
+        for (let j = i; j >= 1; j--) {
+          document.write(j + " ");
+        }
+
+        document.write("<br>");
+      }
+      document.write("<br>");
+      for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
+          document.write("&nbsp;&nbsp; ");
+        }
+        for (let j = i; j <= 5; j++) {
+          document.write(j + " ");
+        }
+        document.write("<br>");
+      }
+
+      //   nested do while loop
+      document.write("<br>");
+      document.write("nested do while loop");
+      let m = 1;
+      do {
+        let n = 1;
+        do {
+          document.write(n + " ");
+          n++;
+        } while (n <= 10);
+        document.write("<br>");
+        m++;
+      } while (m <= 10);
+    </script>
+  </body>
+</html>

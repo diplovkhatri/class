@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.2rem;
+      }
+      h1 {
+        background-color: blue;
+        text-align: center;
+        color: white;
+        font-size: 52px;
+        font-weight: bolder;
+        padding: 5px;
+        height: 60px;
+      }
+      .navbar {
+        background-color: black;
+        color: white;
+        height: 60px;
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 28px;
+        font-weight: 700;
+      }
+      .maindiv {
+        width: 100%;
+        display: flex;
+      }
+      .sidebar {
+        background: linear-gradient(120deg, red, blue);
+        width: 20%;
+        color: white;
+      }
+      .sidebar h2 {
+        text-align: center;
+        margin-top: 25px;
+        color: gold;
+        font-size: 28px;
+      }
+      .catagory {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        font-size: 28px;
+        justify-content: center;
+        align-items: left;
+        margin-left: 25%;
+      }
+      .body {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .card {
+        background-color: none;
+        height: 355px;
+        width: 300px;
+        border: 2px solid gray;
+        box-shadow: 1px 10px 10px 10px gray;
+        margin: 15px;
+      }
+      img {
+        height: 200px;
+        width: 100%;
+        animation: scale 5s 2s 2;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      }
+      @keyframes scale {
+        from {
+          transform: scale(0.5);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      button {
+        font-size: 20px;
+        background-color: palegoldenrod;
+        border: none;
+        border-radius: 15px;
+        color: black;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 22px;
+        font-weight: 400;
+        margin-top: 5px;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      li {
+        padding: 5px;
+      }
+      hr {
+        height: 3px;
+        background-color: black;
+      }
+
+      li:hover {
+        color: white;
+        background: linear-gradient(90deg, rgb(63, 45, 200), rgb(51, 3, 3));
+        text-decoration: underline;
+        margin-left: -20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- assignment 4 -->
+    <h1>Welcome</h1>
+    <div class="navbar">
+      <li>Home</li>
+      <li>Catagory</li>
+      <li>Service</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Gallery</li>
+    </div>
+    <div class="maindiv">
+      <div class="sidebar">
+        <h2>Shop By Department</h2>
+        <div class="catagory">
+          <li>Electronics</li>
+          <li>Clothing</li>
+          <li>Shoes</li>
+          <li>Accessories</li>
+          <li>Home & Living</li>
+          <li>Beauty</li>
+          <li>Health & Beauty</li>
+        </div>
+        <h2>Product Features</h2>
+        <div class="catagory">
+          <li>New Arrivals</li>
+          <li>Best Sellers</li>
+          <li>Sale</li>
+          <li>Clearance</li>
+          <li>Top Rated</li>
+          <li>Most Viewed</li>
+          <li>Most Likes</li>
+        </div>
+      </div>
+      <div class="body">
+        <div class="card">
+          <img src="../introduction/images/shoes.jpeg" alt="" />
+          <hr />
+          <div class="info">
+            <h2>Product Name</h2>
+            <p>Rs.127</p>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../introduction/images/shoes.jpeg" alt="" />
+          <hr />
+          <div class="info">
+            <h2>Product Name</h2>
+            <p>Rs.127</p>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../introduction/images/shoes.jpeg" alt="" />
+          <hr />
+          <div class="info">
+            <h2>Product Name</h2>
+            <p>Rs.127</p>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../introduction/images/shoes.jpeg" alt="" />
+          <hr />
+          <div class="info">
+            <h2>Product Name</h2>
+            <p>Rs.127</p>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../introduction/images/shoes.jpeg" alt="" />
+          <hr />
+          <div class="info">
+            <h2>Product Name</h2>
+            <p>Rs.127</p>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../introduction/images/shoes.jpeg" alt="" />
+          <hr />
+          <div class="info">
+            <h2>Product Name</h2>
+            <p>Rs.127</p>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../introduction/images/shoes.jpeg" alt="" />
+          <hr />
+          <div class="info">
+            <h2>Product Name</h2>
+            <p>Rs.127</p>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../introduction/images/shoes.jpeg" alt="" />
+          <hr />
+          <div class="info">
+            <h2>Product Name</h2>
+            <p>Rs.127</p>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../introduction/images/shoes.jpeg" alt="" />
+          <hr />
+          <div class="info">
+            <h2>Product Name</h2>
+            <p>Rs.127</p>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../introduction/images/shoes.jpeg" alt="" />
+          <hr />
+          <div class="info">
+            <h2>Product Name</h2>
+            <p>Rs.127</p>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
